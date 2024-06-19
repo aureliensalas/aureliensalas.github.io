@@ -1,0 +1,161 @@
+body {
+    padding-top: 42px; /* Adjust the padding to match the header height */
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header {
+    height: 97px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: #666666;
+}
+
+.header h1 {
+    color: white;
+    margin-left: 30px;
+    font-size: xx-large;
+}
+
+.header nav {
+    margin-right: 69px;
+    display: flex;
+    gap: 60px; /* Adjust the gap value as needed */
+}
+
+.header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: larger;
+}
+
+.header nav a:hover {
+    color: #ccc;
+}
+
+.content {
+    display: flex;
+    height: calc(100vh - 55px); /* Subtract the header height */
+    overflow: hidden;
+}
+
+.fixed_abt {
+    margin-top: 42px;
+    background-color: #666666;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%; /* Use the entire height of the content */
+    overflow: auto;
+}
+
+.fixed_abt img {
+    border-radius: 50%;
+    width: 70%;
+    margin: 10px 0; /* Add some space above and below the image */
+}
+
+.fixed_abt a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.fixed_abt a:hover {
+    color: #ccc;
+}
+
+.fixed_abt p, .fixed_abt hr {
+    width: 100%;
+    text-align: center;
+    margin: 25px 0; /* Adjust the vertical space between elements */
+}
+
+.fixed_abt .content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+    flex-grow: 1;
+}
+
+.fixed_abt .content-wrapper p {
+    margin: 15px 0; /* Adjust the vertical space between paragraphs */
+}
+
+.fixed_abt a.email {
+    display: block;
+    word-break: break-all; /* Ensures long words or email addresses break within the box */
+    text-align: center;
+}
+
+.main-content {
+    margin-left: 25%; /* Make room for the fixed_abt column */
+    margin-right: 10%;
+    width: 80%; /* Take up the remaining space */
+    padding: 30px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Make this section scrollable */
+    margin-top: 75px;
+}
+
+.about{
+    margin-bottom: 69px;
+}
+
+.about h1 {
+    margin-top: 0;
+}
+
+.abstract {
+    margin-bottom: 20px;
+    color: #999;
+    font-style: italic;
+}
+
+.research {
+    margin-bottom: 69px;
+}
+
+.list {
+    margin-bottom: 25px;
+}
+
+strong {
+    color: #666666; /* A shade of grey instead of pure black */
+    font-weight: bold;
+}
+
+h1, h2, h3{
+    color:#666666
+}
+
+
+/* Hide scrollbar for WebKit browsers */
+.main-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.main-content {
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Hide scrollbar for IE and Edge */
+.main-content {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
