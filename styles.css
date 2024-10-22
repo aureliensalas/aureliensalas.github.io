@@ -24,6 +24,12 @@ body {
     font-size: xx-large;
 }
 
+.header h2 {
+    color: white;
+    margin-left: 30px;
+    font-size: xx-large;
+}
+
 .header nav {
     margin-right: 69px;
     display: flex;
