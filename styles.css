@@ -1,167 +1,128 @@
+/* Base */
 body {
-    padding-top: 42px; /* Adjust the padding to match the header height */
+    padding-top: 42px; /* matches your current layout */
     margin: 0;
     font-family: "Montserrat", sans-serif;
+    line-height: 1.55;
 }
 
+h1, h2, h3 { color: #666666; }
+strong { color: #666666; font-weight: 700; }
+
+/* Header */
 .header {
     height: 97px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: fixed; top: 0; left: 0; right: 0;
     z-index: 100;
     background-color: #666666;
 }
 
-.header h1 {
-    color: white;
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin-left: 30px;
-    font-size: xx-large;
 }
 
-.header h2 {
-    color: white;
-    margin-left: 30px;
-    font-size: xx-large;
-}
+.header h1 { color: #fff; margin: 0; font-size: xx-large; }
 
 .header nav {
     margin-right: 69px;
-    display: flex;
-    gap: 60px; /* Adjust the gap value as needed */
+    display: flex; gap: 60px;
 }
-
 .header nav a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-    font-size: larger;
+    color: #fff; text-decoration: none; transition: color .2s ease; font-size: larger;
 }
+.header nav a:hover { color: #ccc; }
 
-.header nav a:hover {
-    color: #ccc;
-}
-
-.content {
-    display: flex;
-    height: calc(100vh - 55px); /* Subtract the header height */
-    overflow: hidden;
-}
+/* Layout */
+.content { display: flex; height: calc(100vh - 55px); overflow: hidden; }
 
 .fixed_abt {
     margin-top: 42px;
-    background-color: #666666;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    align-items: center;
-    width: 20%;
-    padding: 10px;
-    box-sizing: border-box;
-    height: 100%; /* Use the entire height of the content */
-    overflow: auto;
+    background-color: #666666; color: #fff;
+    display: flex; flex-direction: column; position: fixed; align-items: center;
+    width: 20%; padding: 10px; box-sizing: border-box;
+    height: 100%; overflow: auto;
 }
-
-.fixed_abt img {
-    border-radius: 50%;
-    width: 70%;
-    margin: 10px 0; /* Add some space above and below the image */
-}
-
-.fixed_abt a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.fixed_abt a:hover {
-    color: #ccc;
-}
-
-.fixed_abt p, .fixed_abt hr {
-    width: 100%;
-    text-align: center;
-    margin: 25px 0; /* Adjust the vertical space between elements */
-}
-
-.fixed_abt .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    overflow: auto;
-    flex-grow: 1;
-}
-
-.fixed_abt .content-wrapper p {
-    margin: 15px 0; /* Adjust the vertical space between paragraphs */
-}
-
-.fixed_abt a.email {
-    display: block;
-    word-break: break-all; /* Ensures long words or email addresses break within the box */
-    text-align: center;
-}
+.fixed_abt img { border-radius: 50%; width: 70%; margin: 10px 0; }
+.fixed_abt a { color: #fff; text-decoration: none; transition: color .2s ease; }
+.fixed_abt a:hover { color: #ccc; }
+.fixed_abt p, .fixed_abt hr { width: 100%; text-align: center; margin: 25px 0; }
+.fixed_abt .content-wrapper { display: flex; flex-direction: column; align-items: center; width: 100%; overflow: auto; flex-grow: 1; }
+.fixed_abt .content-wrapper p { margin: 15px 0; }
+.fixed_abt a.email { display: block; word-break: break-all; text-align: center; }
 
 .main-content {
-    margin-left: 25%; /* Make room for the fixed_abt column */
-    margin-right: 10%;
-    width: 80%; /* Take up the remaining space */
-    padding: 30px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Make this section scrollable */
-    margin-top: 75px;
+    margin-left: 25%; margin-right: 10%;
+    width: 80%;
+    padding: 30px; box-sizing: border-box;
+    overflow-y: auto; margin-top: 75px;
 }
 
-.about{
-    margin-bottom: 69px;
-}
+.about { margin-bottom: 69px; }
+.research { margin-bottom: 69px; }
+.list { margin-bottom: 25px; }
 
-.about h1 {
-    margin-top: 0;
+/* Papers: subtle polish */
+.papers { list-style: none; padding: 0; margin: 0; }
+.paper { margin-bottom: 36px; }
+.paper-line {
+    display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
 }
+.paper-authors { margin: 6px 0 12px; color: #666666; }
+.venue { margin-left: 2px; color: #666666; font-style: italic; }
+.paper-links { display: flex; gap: 10px; margin: 6px 0 10px; }
 
 .abstract {
-    margin-bottom: 20px;
+    margin: 0;
     color: #999;
     font-style: italic;
 }
 
-.research {
-    margin-bottom: 69px;
+/* Small UI atoms */
+.badge {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(0,0,0,0.08);
+    background: #f4f4f4;
+    color: #555;
+    vertical-align: middle;
+}
+.badge-status {
+    background: #e9f6ef;
+    color: #277a4f;
+    border-color: rgba(39,122,79,0.15);
+}
+.job-market {
+    background: #ffffff;
+    color: #222;
+    border-color: rgba(255,255,255,0.5);
 }
 
-.list {
-    margin-bottom: 25px;
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid #666666;
+    text-decoration: none;
+    font-size: 14px;
+    color: #666666;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+}
+.btn:hover {
+    background: #666666;
+    color: #fff;
+}
+.btn-ghost {
+    background: transparent;
 }
 
-strong {
-    color: #666666; /* A shade of grey instead of pure black */
-    font-weight: bold;
-}
-
-h1, h2, h3{
-    color:#666666
-}
-
-
-/* Hide scrollbar for WebKit browsers */
-.main-content::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for Firefox */
-.main-content {
-    scrollbar-width: none; /* For Firefox */
-}
-
-/* Hide scrollbar for IE and Edge */
-.main-content {
-    -ms-overflow-style: none; /* For Internet Explorer and Edge */
-}
+/* Scrollbar hiding stays as you had it */
+.main-content::-webkit-scrollbar { display: none; }
+.main-content { scrollbar-width: none; -ms-overflow-style: none; }
