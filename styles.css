@@ -48,7 +48,16 @@ strong { color: #666666; font-weight: 700; }
     width: 20%; padding: 10px; box-sizing: border-box;
     height: 100%; overflow: auto;
 }
-.fixed_abt img { border-radius: 50%; width: 70%; margin: 10px 0; }
+.fixed_abt img {
+    width: 80%;
+    max-width: 190px;          /* keeps it reasonable on large screens */
+    aspect-ratio: 1 / 1;       /* perfect circle even if source is not */
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff; /* “professional” frame on the dark bg */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    margin: 18px 0 24px;
+}
 .fixed_abt a { color: #fff; text-decoration: none; transition: color .2s ease; }
 .fixed_abt a:hover { color: #ccc; }
 .fixed_abt p, .fixed_abt hr { width: 100%; text-align: center; margin: 25px 0; }
