@@ -14,115 +14,218 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <div class="brand">
-            <h1>Aurélien Salas</h1>
-            <span class="badge job-market" title="Economics Job Market 2025–26">Job Market 2025–26</span>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="header" id="top">
+        <div class="header-inner">
+            <div class="brand">
+                <div>
+                    <h1>Aurélien Salas</h1>
+                    <p class="brand-subtitle">PhD Candidate in Economics</p>
+                </div>
+                <span class="badge job-market" title="Economics Job Market 2025–26">Job Market 2025–26</span>
+            </div>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#teaching">Teaching</a>
+            </nav>
         </div>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#teaching">Teaching</a>
-        </nav>
     </header>
 
-    <div class="content">
-        <div class="fixed_abt">
-            <img src="Aurelien.jpg" alt="Aurélien Salas">
-            <div class="content-wrapper">
-                <p>PhD Candidate</p>
-                <a href="https://www.sciencespo.fr/department-economics/" target="_blank" rel="noopener"><p>Department of Economics</p>
-                <p>Sciences Po Paris</p></a>
-                <hr>
-                <p><a href="CV_Salas.pdf" target="_blank" rel="noopener">CV</a></p>
-                <p><a href="mailto:aurelien.salas@sciencespo.fr" class="email">aurelien.salas@sciencespo.fr</a></p>
-            </div>
-        </div>
+    <div class="page-shell">
+        <div class="content">
+            <aside class="fixed_abt" aria-label="Profile">
+                <img src="Aurelien.jpg" alt="Portrait of Aurélien Salas">
+                <div class="content-wrapper">
+                    <p class="profile-role">PhD Candidate</p>
+                    <p>
+                        <a href="https://www.sciencespo.fr/department-economics/" target="_blank" rel="noopener">
+                            Department of Economics
+                        </a>
+                    </p>
+                    <p>Sciences Po Paris</p>
+                    <hr>
+                    <p><a href="CV_Salas.pdf" target="_blank" rel="noopener">CV</a></p>
+                    <p><a href="mailto:aurelien.salas@sciencespo.fr" class="email">aurelien.salas@sciencespo.fr</a></p>
+                </div>
+            </aside>
 
-        <div class="main-content">
-            <section class="about" id="about">
-                <h2>About</h2>
-                <p>I am a PhD candidate in the Department of Economics at Sciences Po, supervised by <a href="https://edurichet.github.io/" target="_blank" rel="noopener">Eduardo Perez-Richet</a> and <a href="https://sites.google.com/view/hagenbachjeanne/home" target="_blank" rel="noopener">Jeanne Hagenbach</a>.</p>
-                <p><strong>I am on the 2025–26 economics job market.</strong></p>
-                <p>I am interested in understanding how users' behaviors and regulations shape the outcomes of the digital economy.</p>
-                <p>For that, I use microeconomic theory, behavioral, and experimental economics.</p>
-                <h3>Current research interests:</h3>
-                <ul>
-                  <li>Human-AI Interactions</li>
-                  <li>Privacy</li>
-                  <li>Price Discrimination</li>
-                </ul>
-            </section>
+            <main class="main-content" id="main-content">
+                <section class="about" id="about" aria-labelledby="about-title">
+                    <h2 id="about-title">About</h2>
+                    <p>I am a PhD candidate in the Department of Economics at Sciences Po, supervised by <a href="https://edurichet.github.io/" target="_blank" rel="noopener">Eduardo Perez-Richet</a> and <a href="https://sites.google.com/view/hagenbachjeanne/home" target="_blank" rel="noopener">Jeanne Hagenbach</a>.</p>
+                    <p><strong>I am on the 2025–26 economics job market.</strong></p>
+                    <p>I am interested in understanding how users' behaviors and regulations shape the outcomes of the digital economy.</p>
+                    <p>For that, I use microeconomic theory, behavioral, and experimental economics.</p>
+                    <h3>Current research interests:</h3>
+                    <ul>
+                      <li>Human-AI Interactions</li>
+                      <li>Privacy</li>
+                      <li>Price Discrimination</li>
+                    </ul>
+                </section>
 
-            <section class="research" id="research">
-                <h2>Research</h2>
+                <section class="research" id="research" aria-labelledby="research-title">
+                    <h2 id="research-title">Research</h2>
 
-                <h3>Job Market Paper</h3>
-                <ul class="papers">
-                    <li class="paper">
-                        <div class="paper-line">
-                            <strong>Price Discrimination with Endogenous Participation</strong>
-                        </div>
-                        <div class="paper-links">
-                            <a class="btn" href="PDWEP.pdf" target="_blank" rel="noopener">Paper</a>
-                        </div>
-                        <p class="abstract">Abstract: To what extent should platforms enable price discrimination by sellers when buyers can vote with their feet? I assume that buyers are endowed with an outside option and receive a signal about their value before they decide whether to enter the platform or not. For the platform, endogenous participation creates a trade-off between surplus extraction and participation. It also imposes a constraint: when participation increases with valuations, the segmentations that deliver the highest buyer surplus under full participation cannot be implemented. I characterize the feasible welfare frontier and derive the platform’s optimal segmentation under three alternative assumptions about buyer information. Overall, while endogenous participation can push platforms to give more surplus to buyers, it can also limit their ability to implement the most buyer-friendly segmentations.
-                </ul>
+                    <div class="research-group">
+                        <h3>Job Market Paper</h3>
+                        <ul class="papers" aria-label="Job Market Paper">
+                            <li class="paper">
+                                <article class="paper-card">
+                                    <div class="paper-line">
+                                        <strong>Price Discrimination with Endogenous Participation</strong>
+                                    </div>
+                                    <div class="paper-links">
+                                        <a class="btn" href="PDWEP.pdf" target="_blank" rel="noopener">Paper</a>
+                                    </div>
+                                    <details class="abstract-details">
+                                        <summary>Abstract</summary>
+                                        <p class="abstract">To what extent should platforms enable price discrimination by sellers when buyers can vote with their feet? I assume that buyers are endowed with an outside option and receive a signal about their value before they decide whether to enter the platform or not. For the platform, endogenous participation creates a trade-off between surplus extraction and participation. It also imposes a constraint: when participation increases with valuations, the segmentations that deliver the highest buyer surplus under full participation cannot be implemented. I characterize the feasible welfare frontier and derive the platform’s optimal segmentation under three alternative assumptions about buyer information. Overall, while endogenous participation can push platforms to give more surplus to buyers, it can also limit their ability to implement the most buyer-friendly segmentations.</p>
+                                    </details>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
 
-                <h3>Publications</h3>
-                <ul class="papers">
-                    <li class="paper">
-                        <div class="paper-line">
-                            <strong>Strategic Information Disclosure to Classification Algorithms: An Experiment</strong>
-                            <span class="venue"><em>Experimental Economics, 2025, 1-22</em></span>
-                        </div>
-                        <div class="paper-authors">
-                            with <a href="https://sites.google.com/view/hagenbachjeanne/home" target="_blank" rel="noopener">Jeanne Hagenbach</a>
-                        </div>
-                        <div class="paper-links">
-                            <a class="btn" href="MainSIDCA.pdf" target="_blank" rel="noopener">Paper</a>
-                            <a class="btn btn-ghost" href="OnlineSIDCA.pdf" target="_blank" rel="noopener">Online Appendix</a>
-                        </div>
-                        <p class="abstract">Abstract: We experimentally study how individuals strategically disclose multidimensional information to a Naive Bayes algorithm trained to guess their characteristics. Subjects' objective is to minimize the algorithm's accuracy in guessing a target characteristic. We vary what participants know about the algorithm's functioning and how obvious are the correlations between the target and other characteristics. Optimal disclosure strategies rely on subjects identifying whether the combination of their characteristics is common or not. Information about the algorithm functioning makes subjects identify correlations they otherwise do not see but also overthink. Overall, this information decreases the frequency of optimal disclosure strategies.</p>
-                    </li>
-                </ul>
+                    <div class="research-group">
+                        <h3>Publications</h3>
+                        <ul class="papers" aria-label="Publications">
+                            <li class="paper">
+                                <article class="paper-card">
+                                    <div class="paper-line">
+                                        <strong>Strategic Information Disclosure to Classification Algorithms: An Experiment</strong>
+                                        <span class="venue"><em>Experimental Economics, 2025, 1-22</em></span>
+                                    </div>
+                                    <div class="paper-authors">
+                                        with <a href="https://sites.google.com/view/hagenbachjeanne/home" target="_blank" rel="noopener">Jeanne Hagenbach</a>
+                                    </div>
+                                    <div class="paper-links">
+                                        <a class="btn" href="MainSIDCA.pdf" target="_blank" rel="noopener">Paper</a>
+                                        <a class="btn btn-ghost" href="OnlineSIDCA.pdf" target="_blank" rel="noopener">Online Appendix</a>
+                                    </div>
+                                    <details class="abstract-details">
+                                        <summary>Abstract</summary>
+                                        <p class="abstract">We experimentally study how individuals strategically disclose multidimensional information to a Naive Bayes algorithm trained to guess their characteristics. Subjects' objective is to minimize the algorithm's accuracy in guessing a target characteristic. We vary what participants know about the algorithm's functioning and how obvious are the correlations between the target and other characteristics. Optimal disclosure strategies rely on subjects identifying whether the combination of their characteristics is common or not. Information about the algorithm functioning makes subjects identify correlations they otherwise do not see but also overthink. Overall, this information decreases the frequency of optimal disclosure strategies.</p>
+                                    </details>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
 
-                <h3>Work in Progress</h3>
-                <ul class="papers">
-                      <div class="paper-line">
-                          <strong>Disclosing Proxies</strong>
-                      </div>
-                      <div class="paper-authors">
-                          with <a href="https://paulaonuchic.com/" target="_blank" rel="noopener">Paula Onuchic</a>
-                      </div>
-                      <div class="paper-links">
-                      </div>
-                    </li>
-                </ul>
-            </section>
+                    <div class="research-group">
+                        <h3>Work in Progress</h3>
+                        <ul class="papers" aria-label="Work in Progress">
+                            <li class="paper">
+                                <article class="paper-card">
+                                    <div class="paper-line">
+                                        <strong>Disclosing Proxies</strong>
+                                    </div>
+                                    <div class="paper-authors">
+                                        with <a href="https://paulaonuchic.com/" target="_blank" rel="noopener">Paula Onuchic</a>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            <section class="teaching" id="teaching">
-                <h2>Teaching</h2>
-                <ul>
-                    <li class="list">
-                        <strong>2023 : Math Camp - Real Analysis</strong>, with Dániel Gyetvai, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
-                    </li>
-                    <li class="list">
-                        <strong>2023 : Microeconomics I</strong>, Pr. <a href="https://edurichet.github.io/" target="_blank" rel="noopener">Eduardo Perez-Richet</a>, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
-                    </li>
-                    <li class="list">
-                        <strong>2022-2023 : Microeconomics: Information, Design and Institutions</strong>, Pr. <a href="https://sites.google.com/site/emericmlhenry" target="_blank" rel="noopener">Emeric Henry</a>, Collège Universitaire, Sciences Po
-                    </li>
-                    <li class="list">
-                        <strong>2021-2022 : Microeconomics I</strong>, Pr. Sidartha Gordon, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
-                    </li>
-                    <li class="list">
-                        <strong>2021 : Microeconomics: Information, Design and Institutions</strong>, Pr. <a href="https://sites.google.com/site/jmarcrobin/home" target="_blank" rel="noopener">Jean-Marc Robin</a>, Collège Universitaire, Sciences Po
-                    </li>
-                </ul>
-            </section>
+                <section class="teaching" id="teaching" aria-labelledby="teaching-title">
+                    <h2 id="teaching-title">Teaching</h2>
+                    <ul>
+                        <li class="list">
+                            <strong>2023 : Math Camp - Real Analysis</strong>, with Dániel Gyetvai, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
+                        </li>
+                        <li class="list">
+                            <strong>2023 : Microeconomics I</strong>, Pr. <a href="https://edurichet.github.io/" target="_blank" rel="noopener">Eduardo Perez-Richet</a>, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
+                        </li>
+                        <li class="list">
+                            <strong>2022-2023 : Microeconomics: Information, Design and Institutions</strong>, Pr. <a href="https://sites.google.com/site/emericmlhenry" target="_blank" rel="noopener">Emeric Henry</a>, Collège Universitaire, Sciences Po
+                        </li>
+                        <li class="list">
+                            <strong>2021-2022 : Microeconomics I</strong>, Pr. Sidartha Gordon, <a href="https://www.sciencespo.fr/ecole-recherche/en/academics/masters/master-economics/" target="_blank" rel="noopener">Master in Economics</a>, Sciences Po
+                        </li>
+                        <li class="list">
+                            <strong>2021 : Microeconomics: Information, Design and Institutions</strong>, Pr. <a href="https://sites.google.com/site/jmarcrobin/home" target="_blank" rel="noopener">Jean-Marc Robin</a>, Collège Universitaire, Sciences Po
+                        </li>
+                    </ul>
+                </section>
+            </main>
         </div>
     </div>
+
+    <button class="back-to-top" type="button" aria-label="Back to top">Top</button>
+
+    <script>
+        const navLinks = Array.from(document.querySelectorAll('.site-nav a'));
+        const sections = navLinks
+            .map((link) => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+        const backToTopButton = document.querySelector('.back-to-top');
+        const detailsElements = Array.from(document.querySelectorAll('.abstract-details'));
+        const mobileMediaQuery = window.matchMedia('(max-width: 640px)');
+
+        function setActiveLink() {
+            const offset = 120;
+            let currentId = sections[0] ? sections[0].id : '';
+
+            sections.forEach((section) => {
+                if (window.scrollY >= section.offsetTop - offset) {
+                    currentId = section.id;
+                }
+            });
+
+            navLinks.forEach((link) => {
+                const isActive = link.getAttribute('href') === '#' + currentId;
+                link.classList.toggle('is-active', isActive);
+                if (isActive) {
+                    link.setAttribute('aria-current', 'location');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
+        }
+
+        function updateBackToTop() {
+            backToTopButton.classList.toggle('is-visible', window.scrollY > 320);
+        }
+
+        function syncAbstractState() {
+            detailsElements.forEach((details) => {
+                if (mobileMediaQuery.matches) {
+                    details.removeAttribute('open');
+                } else {
+                    details.setAttribute('open', '');
+                }
+            });
+        }
+
+        navLinks.forEach((link) => {
+            link.addEventListener('click', () => {
+                navLinks.forEach((navLink) => navLink.classList.remove('is-active'));
+                link.classList.add('is-active');
+            });
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            setActiveLink();
+            updateBackToTop();
+        }, { passive: true });
+
+        if (typeof mobileMediaQuery.addEventListener === 'function') {
+            mobileMediaQuery.addEventListener('change', syncAbstractState);
+        } else if (typeof mobileMediaQuery.addListener === 'function') {
+            mobileMediaQuery.addListener(syncAbstractState);
+        }
+
+        syncAbstractState();
+        setActiveLink();
+        updateBackToTop();
+    </script>
 </body>
 </html>
-
