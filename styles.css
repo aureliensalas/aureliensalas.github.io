@@ -269,6 +269,22 @@ summary:focus-visible {
     word-break: break-word;
 }
 
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.3rem 0.8rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.9rem;
+}
+
+.narrow-shell {
+    width: min(100%, 640px);
+    margin: 0 auto;
+}
+
 .main-content {
     min-width: 0;
     padding: clamp(1.35rem, 2.6vw, 2.5rem);
@@ -450,19 +466,30 @@ summary:focus-visible {
     right: 1rem;
     bottom: 1rem;
     z-index: 90;
-    min-height: 2.5rem;
-    padding: 0.55rem 0.9rem;
+    width: 44px;
+    height: 44px;
+    padding: 0;
     border: 1px solid var(--border-strong);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.96);
-    color: var(--text-soft);
-    font-family: inherit;
-    font-size: 0.88rem;
+    border-radius: 50%;
+    background: none;
+    overflow: hidden;
+    cursor: pointer;
     box-shadow: var(--shadow-soft);
     opacity: 0;
     pointer-events: none;
     transform: translateY(8px);
     transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.back-to-top:focus-visible {
+    border-radius: 50%;
+}
+
+.back-to-top img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .back-to-top.is-visible {
